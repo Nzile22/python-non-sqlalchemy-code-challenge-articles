@@ -6,7 +6,15 @@ class Article:
         
 class Author:
     def __init__(self, name):
+
+        if not isinstance(name, str):
+            raise valueError("Name must be of type str.")
+        if len(name) = 0:
+            raise valueError("Name must be longer than 0 characters.")
         self.name = name
+        self._articles = []
+        self._margazines = []
+
 
     def articles(self):
         pass
