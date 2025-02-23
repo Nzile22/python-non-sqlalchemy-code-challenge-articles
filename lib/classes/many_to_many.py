@@ -32,9 +32,20 @@ class Magazine:
     def __init__(self, name, category):
         self.name = name
         self.category = category
+        self._articles = []
 
-    def articles(self):
+    def add_article(self, name, category):
+        self.name = name
+        self.category = category
+        self._articles = []
+
+    def add_article(self, article):  #adds article to the magazine 
+        self._artcicles.append(article)
+
+    def articles(self)
+        return self._articles   #returns a list of articles in the magazine 
         pass
+    
 
     def contributors(self):
         pass
